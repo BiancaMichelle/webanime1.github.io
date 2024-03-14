@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Bree+Serif&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Signika+Negative:wght@300..700&display=swap');
+
+/* encabezado y barra de navegacion*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, #242038, #342d51, #473a6b, #5a4886, #7055a1, #8062ae, #9170bb, #a17ec8, #ad8fc9, #b7a1cb, #c1b2cc, #cac4ce);
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 5px 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+nav {
+    padding: 0;
+    font-weight: bold;
+}
+header img {
+    width: 80px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+
+}
+header ul li {
+    margin: 20px;
+}
+/* fondo a tota la pagina */
+.todo {
+    background-color: #F7ECE1;
+}
+
+
+
+img{
+    width: 250px;
+}
+h1{
+    font-size: 50px;
+    color: #3C1518;
+    font-family: "Angkor", static; 
+    font-weight: 400;
+    font-style: normal;
+    background-color: #CAC4CE;
+    padding: 20px;
+
+}
+h2{
+    font-size: 40px;
+    color: #69140E;
+    font-family: "Bree Serif", static;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px 10px 0px 10px; 
+}
+.recomendaciones h2{
+    font-size: 60px;
+    padding: 0px 0px 0px 10px;
+    text-align: center; 
+}
+h3{
+    font-size: 25px;
+    color: black;
+    font-family: "Bree Serif", static;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px 10px 0px 10px;
+
+}
+p{
+    font-size: 18px;
+    color: rgb(58, 54, 54);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+}
+
+tr{
+    text-align: center;
+    font-size: 20px;
+}
+tbody p{
+    font-size: 13px;
+    text-align: center;
+}
+
+table{
+    width: 70%;
+    padding: 0px 10px 0px 10px;
+}
+.contenedor{
+    width: 100%;
+    margin: 5px 0 5px 0;
+    display: flex;
+    flex-direction: row;
+}
+.card-group{
+    width:85%;
+    height: 85%;
+    padding: 15px;
+
+}
+
+.caja{
+    display: flex;
+
+justify-content: center;}
+.card-group p{
+    font-size: 15px;
+
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+}
+.card-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.cuadro{
+    margin: 5px 90px 20px 90px;
+}
+
+.clasificacion{
+    margin: 5px 50px 20px 50px; 
+    width: 80%;
+
+
+}
+.accordion-header{
+    background-color: #CAC4CE;
+}
+.accordion-body{
+    background-color: #CAC4CE;  
+}
+.contenedor-comentarios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenedor-comentarios img {
+    width: 100%;
+}
+.area-comentar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    margin: 30px;
+    padding: 18px;
+    background-color: #dfdae2;
+    box-shadow: 0 0 5px 2px #9067C6;
+    border-radius: 12px;
+}
+.comentarios-usuarios {
+    width: calc(100% - 2.5rem);
+}
+.contenedor-comentarios a {
+    text-decoration: none;
+}
+.comentar-publicacion .avatar,
+.publicacion-realizada .usuario-publico .avatar,
+.contenedor-comentarios .comentario-principal-usuario .avatar,
+.area-comentar .avatar {
+    display: flex;
+    width: 65px;
+    height: 65px;
+    background-color: #ece3f1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.public{
+    background-color: #ece3f1;
+}
+.comentarios-usuarios .nombre-usuario {
+    font-weight: bold;
+    margin-right: .5rem;
+    color: inherit;
+}
+
+/* botones comentar */
+.boton-subir-archivo {
+    position: relative;
+    display: inline-block;
+}
+.boton-subir-archivo input[type="file"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.boton-file,
+.boton-enviar {
+    display: inline-block;
+    border: 0;
+    background-color: #a78bcc;
+    padding: 7px 15px;
+    margin-right: .5rem;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color ease-in 200ms;
+}
+.boton-file:hover,
+.boton-enviar:hover {
+    background-color: #242038;
+}
+.contenedor-comentarios .comentario-principal-usuario .comentario,
+.area-comentar .inputs-comentarios {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: .5rem;
+}
+.area-comentar .inputs-comentarios {
+    margin-left: 1rem;
+}
+.contenedor-comentarios .comentario-principal-usuario .texto,
+.area-comentar .inputs-comentarios .area-comentario {
+    border: 0;
+    background-color: #ece3f1;
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: .5rem;
+}
+.botones-comentario span.tiempo-comentario {
+    font-size: 0.8rem !important;
+    color: #9F9F9F;
+    margin-left: .25rem;
+}
+.area-comentar .inputs-comentarios .area-comentario {
+    padding: 12px 15px;
+}
+.area-comentar .inputs-comentarios .botones-comentar {
+    display: flex;
+}
+
+/* comentarios de usuario */
+.comentarios-usuarios .comentario-principal-usuario {
+    display: flex;
+    flex-wrap: wrap;
+}
+.comentarios-usuarios .usuario-comentario {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+.menu-comentario {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #a78bcc;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.comentarios-usuarios .usuario-comentario .menu-comentario {
+    top: 5px;
+    right: -15px;
+    box-shadow: 0 0 5px #9067C6;
+}
+.comentarios-usuarios .usuario-comentario:hover .menu-comentario {
+    display: flex;
+}
+.publicacion-realizada .menu-comentario {
+    display: flex;
+    right: 0;
+}
+.menu-comentario .menu {
+    list-style: none;
+    position: absolute;
+    right: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px #9067C6;
+    border-radius: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in 200ms;
+}
+.menu-comentario:hover .menu {
+    opacity: 1;
+    visibility: visible;
+}
+.menu-comentario .menu a {
+    display: block;
+    padding: 7px 15px;
+    color: inherit;
+}
+.menu-comentario .menu a:hover {
+    background-color: #E1E1E1;
+}
+.publicacion-realizada .usuario-publico .avatar,
+.comentarios-usuarios .comentario-principal-usuario .avatar {
+    width: 45px;
+    height: 45px;
+}
+.comentarios-usuarios .comentario-principal-usuario .texto {
+    padding: 10px 15px;
+    width: auto;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: .25rem;
+    font-size: 0.9rem;
+    position: relative;
+    padding-right: 1.65rem;
+}
+.comentarios-usuarios .comentario-principal-usuario .comentar-comentario {
+    width: 100%;
+    display: flex;
+}
+.comentarios-usuarios .comentar-publicacion input[type="text"] {
+    border: 0;
+    background-color: #dfdae2;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 8px 10px;
+    font-size: .9rem;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.botones-comentario {
+    display: block;
+}
+.botones-comentario button {
+    display: inline-block;
+    border: 0;
+    padding: 3px 8px;
+    font-size: .8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.botones-comentario button:hover {
+    background-color: #D5D8E1;
+}
+.comentar-publicacion .avatar,
+.contenedor-sub-comentarios .comentario-principal-usuario .avatar {
+    width: 32px;
+    height: 32px;
+}
+.boton-enviar i,
+.boton-file i,
+.boton-puntuar i,
+.boton-responder i {
+    margin-right: .5rem;
+}
+
+/* publicacion realizada */
+.publicacion-realizada {
+    margin-bottom: 1.5rem;
+    margin: 20px;
+}
+.publicacion-realizada .usuario-publico {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: .5rem;
+    position: relative;
+}
+.publicacion-realizada .usuario-publico .contenido-publicacion {
+    margin-left: 1rem;
+}
+.comentar-publicacion {
+    display: flex;
+    width: 80%;
+    margin-left: 70px;
+}
+.comentar-publicacion .comentar-comentario {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    align-items: center;
+}
+.archivo-publicado {
+    width: 70%;
+    border-radius: 8px;
+    margin: 5px;
+    margin: 20px;
+    display: flex;
+    align-content: center;
+}
